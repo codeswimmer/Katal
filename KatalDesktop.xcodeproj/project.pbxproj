@@ -7,11 +7,16 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		9E4AD70519E1B83900876004 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E4AD70419E1B83900876004 /* AppDelegate.swift */; };
-		9E4AD70719E1B83900876004 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E4AD70619E1B83900876004 /* ViewController.swift */; };
 		9E4AD70919E1B83900876004 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9E4AD70819E1B83900876004 /* Images.xcassets */; };
 		9E4AD70C19E1B83900876004 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9E4AD70A19E1B83900876004 /* Main.storyboard */; };
 		9E4AD71819E1B83900876004 /* KatalDesktopTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E4AD71719E1B83900876004 /* KatalDesktopTests.swift */; };
+		9E4AD72719E1B94900876004 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E4AD72419E1B94900876004 /* AppDelegate.swift */; };
+		9E4AD72819E1B94900876004 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E4AD72419E1B94900876004 /* AppDelegate.swift */; };
+		9E4AD72919E1B94900876004 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E4AD72519E1B94900876004 /* ViewController.swift */; };
+		9E4AD72A19E1B94900876004 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E4AD72519E1B94900876004 /* ViewController.swift */; };
+		9E4AD72C19E1B96300876004 /* Katal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E4AD72B19E1B96300876004 /* Katal.swift */; };
+		9E4AD72D19E1B96300876004 /* Katal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E4AD72B19E1B96300876004 /* Katal.swift */; };
+		9E4AD73219E1C85D00876004 /* KatalTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E4AD73119E1C85D00876004 /* KatalTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -27,13 +32,15 @@
 /* Begin PBXFileReference section */
 		9E4AD6FF19E1B83900876004 /* KatalDesktop.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KatalDesktop.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9E4AD70319E1B83900876004 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		9E4AD70419E1B83900876004 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		9E4AD70619E1B83900876004 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		9E4AD70819E1B83900876004 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		9E4AD70B19E1B83900876004 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		9E4AD71119E1B83900876004 /* KatalDesktopTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = KatalDesktopTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		9E4AD71619E1B83900876004 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9E4AD71719E1B83900876004 /* KatalDesktopTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KatalDesktopTests.swift; sourceTree = "<group>"; };
+		9E4AD72419E1B94900876004 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		9E4AD72519E1B94900876004 /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		9E4AD72B19E1B96300876004 /* Katal.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Katal.swift; sourceTree = "<group>"; };
+		9E4AD73119E1C85D00876004 /* KatalTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KatalTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -75,10 +82,9 @@
 		9E4AD70119E1B83900876004 /* KatalDesktop */ = {
 			isa = PBXGroup;
 			children = (
-				9E4AD70419E1B83900876004 /* AppDelegate.swift */,
-				9E4AD70619E1B83900876004 /* ViewController.swift */,
-				9E4AD70819E1B83900876004 /* Images.xcassets */,
-				9E4AD70A19E1B83900876004 /* Main.storyboard */,
+				9E4AD72219E1B94900876004 /* Source */,
+				9E4AD72E19E1BA5A00876004 /* Resources */,
+				9E4AD72119E1B91400876004 /* UX */,
 				9E4AD70219E1B83900876004 /* Supporting Files */,
 			);
 			path = KatalDesktop;
@@ -95,6 +101,7 @@
 		9E4AD71419E1B83900876004 /* KatalDesktopTests */ = {
 			isa = PBXGroup;
 			children = (
+				9E4AD72F19E1C83E00876004 /* Source */,
 				9E4AD71719E1B83900876004 /* KatalDesktopTests.swift */,
 				9E4AD71519E1B83900876004 /* Supporting Files */,
 			);
@@ -107,6 +114,64 @@
 				9E4AD71619E1B83900876004 /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		9E4AD72119E1B91400876004 /* UX */ = {
+			isa = PBXGroup;
+			children = (
+				9E4AD70A19E1B83900876004 /* Main.storyboard */,
+				9E4AD70819E1B83900876004 /* Images.xcassets */,
+			);
+			name = UX;
+			sourceTree = "<group>";
+		};
+		9E4AD72219E1B94900876004 /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				9E4AD72319E1B94900876004 /* App */,
+				9E4AD72619E1B94900876004 /* Katal */,
+			);
+			path = Source;
+			sourceTree = "<group>";
+		};
+		9E4AD72319E1B94900876004 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				9E4AD72419E1B94900876004 /* AppDelegate.swift */,
+				9E4AD72519E1B94900876004 /* ViewController.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		9E4AD72619E1B94900876004 /* Katal */ = {
+			isa = PBXGroup;
+			children = (
+				9E4AD72B19E1B96300876004 /* Katal.swift */,
+			);
+			path = Katal;
+			sourceTree = "<group>";
+		};
+		9E4AD72E19E1BA5A00876004 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		9E4AD72F19E1C83E00876004 /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				9E4AD73019E1C83E00876004 /* Katal */,
+			);
+			path = Source;
+			sourceTree = "<group>";
+		};
+		9E4AD73019E1C83E00876004 /* Katal */ = {
+			isa = PBXGroup;
+			children = (
+				9E4AD73119E1C85D00876004 /* KatalTests.swift */,
+			);
+			path = Katal;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -208,8 +273,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9E4AD70719E1B83900876004 /* ViewController.swift in Sources */,
-				9E4AD70519E1B83900876004 /* AppDelegate.swift in Sources */,
+				9E4AD72719E1B94900876004 /* AppDelegate.swift in Sources */,
+				9E4AD72919E1B94900876004 /* ViewController.swift in Sources */,
+				9E4AD72C19E1B96300876004 /* Katal.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -217,7 +283,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9E4AD72A19E1B94900876004 /* ViewController.swift in Sources */,
+				9E4AD72819E1B94900876004 /* AppDelegate.swift in Sources */,
+				9E4AD73219E1C85D00876004 /* KatalTests.swift in Sources */,
 				9E4AD71819E1B83900876004 /* KatalDesktopTests.swift in Sources */,
+				9E4AD72D19E1B96300876004 /* Katal.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
