@@ -9,14 +9,44 @@
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "KatalDesktopTests/Source/Katal/KatalTests.swift"
-            timestampString = "434228909.37178"
+            filePath = "KatalDesktop/Source/Katal/Katal.swift"
+            timestampString = "434344335.708759"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "25"
-            endingLineNumber = "25"
-            landmarkName = "testParseTransform()"
+            startingLineNumber = "73"
+            endingLineNumber = "73"
+            landmarkName = "perform(_:)"
             landmarkType = "5">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "KatalDesktop.ParserStateTransformer.perform (KatalDesktop.ParserStateTransformer)(Swift.Character, KatalDesktop.ParserState) -&gt; KatalDesktop.ParserState"
+                  moduleName = "KatalDesktop"
+                  urlString = "file:///Users/kermel/Code/osx/spikes/KatalDesktop/KatalDesktop/Source/Katal/Katal.swift"
+                  timestampString = "434344343.179954"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "73"
+                  endingLineNumber = "73"
+                  offsetFromSymbolStart = "2549">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "KatalDesktopTests.ParserStateTransformer.perform (KatalDesktopTests.ParserStateTransformer)(Swift.Character, KatalDesktopTests.ParserState) -&gt; KatalDesktopTests.ParserState"
+                  moduleName = "KatalDesktopTests"
+                  urlString = "file:///Users/kermel/Code/osx/spikes/KatalDesktop/KatalDesktop/Source/Katal/Katal.swift"
+                  timestampString = "434344343.32142"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "73"
+                  endingLineNumber = "73"
+                  offsetFromSymbolStart = "2549">
+               </Location>
+            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
    </Breakpoints>

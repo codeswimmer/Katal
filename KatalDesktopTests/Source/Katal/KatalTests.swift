@@ -9,6 +9,7 @@
 import Cocoa
 import XCTest
 
+
 class KatalTests: XCTestCase {
 
     let inputToParse = "[≫]}{('HELLO')}{[Console]}{[String.upperCase]}{[Console]}{[≪]"

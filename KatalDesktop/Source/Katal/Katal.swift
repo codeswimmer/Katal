@@ -37,14 +37,14 @@ class Katal: IdentityTransformer {
     private func parseAndExecute(input: String) -> String {
         println(">>>: \(input)")
         
-        func foo(c: Character) {
+        func parserPlug(c: Character) {
             println(": \(c)")
             parser.perform(c)
         }
         
         parser.begin()
         
-        let actionInput = (input, foo)
+        let actionInput = (input, parserPlug)
         let result = stringWalker.perform(actionInput)
         println("result: \(result)")
         
@@ -57,43 +57,21 @@ class Katal: IdentityTransformer {
 
 // immutable
 class ParserState {
-    
-    init(_ value: String) {
-        self.value = value
-    }
-    
+    init(_ value: String) {self.value = value}
     let value: String
-    
-//    class func with(string: String) -> ParserState {
-//        if let v = Value(rawValue: string) {return ParserState(v)}
-//        return ParserState(Value.unknown)
-//    }
-//    
-//    class func with(value: Value) -> ParserState {return ParserState(value)}
-//    
-//    init(_ value: Value) {self.value = value}
-//    
-//    enum Value: String {
-//        case begin = "begin"
-//        case end = "end"
-//        case unknown = "unknown"
-//    }
-//    
-//    let value: Value
 }
 
 class ParserStateTransformer: MutatingTransformer {
     
-    func perform(charIn: Character) -> ParserState {
-        println("charIn: \(charIn)")
+    func perform(input: (Character, ParserState)) -> ParserState {
+        
+        println("charIn: \(input.0)")
         var result = ParserState(Op.unknown.rawValue)
         
-//        if let rule = rules[Op.transformerBegin.rawValue] as? ParserRule {
-//            println("rule: \(rule)")
-//            result = rule.perform(charIn)
-//        }
-        
-        let x = rules[Op.begin.characterValue]
+        if let rule = rules[input.0] {
+            println("x: \(rule); state: \(input.1.value)")
+            println("")
+        }
         return result
     }
 
@@ -140,7 +118,7 @@ class Parser: MutatingTransformer {
     func begin() {_mutableState = ParserState(ParserStateTransformer.Op.begin.rawValue)}
     
     func perform(input: Character) -> ParserState {
-        _mutableState = xformer.perform(input)
+        _mutableState = xformer.perform((input, state))
         return state
     }
     
